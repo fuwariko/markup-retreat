@@ -1,1 +1,22 @@
-/* Пиши стили тут */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url('img/star-empty.svg');
+    background-size: cover;
+    display: inline-block;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    background-image: url('img/star.svg');
+}
